@@ -6,10 +6,15 @@ with open ('Remix.txt', 'r') as file:
     
 blob = TextBlob(text)
 
+#this declares the different word types that i will be calling 
+
 adjectives = []
 nouns = []
 conjunction = []
 preposition = []
+
+#This is the code that allows you to generate random 
+#words form your text file and have them printed out
 
 for word, pos in blob.tags:
     if (pos == 'JJ'):
